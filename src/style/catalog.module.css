@@ -1,0 +1,70 @@
+.head{
+	color: #550312;
+	font-family: 'Poppins';
+	font-weight: 600;
+	position: relative;
+	display: block;
+	width: 200px;
+}
+.head::after {
+	content: "";
+	position: absolute;
+	bottom: 10;
+	left: 50px;
+	width: 50%;
+	height: 10px;
+	background-color: #FFBE41;
+	right: 0;
+	margin: 0 auto;
+	display: block;
+	border-radius: 12px;
+}
+.catalog{
+	display: flex;
+	justify-content: center;
+}
+.menu{
+	display: flex;
+	justify-content: center;
+	width: 1300px;
+	flex-wrap: wrap;
+	
+}
+.menuCard{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	height: 300px;
+	flex-direction: column;
+	padding: 20px 20px 20px 20px;
+	border: #FFBE41 solid 2px;
+	border-radius: 13px;
+	margin: 10px 10px 10px 10px;
+	box-shadow: 0 3px #FFBE41 
+}
+.menuCard_h{
+	color: #550312;
+	font-family: 'Poppins';
+	font-weight: 500;
+}
+.menuCard_info{
+	display: flex;
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 17px;
+	color: #333333;
+	text-align: center;
+}
+.buy_btn{
+	width: 100px;
+	height: 50px;
+	border: #550312 2px solid;
+	border-radius: 50px;
+	background-color: transparent;
+	color: #550312;
+	font-family: 'Poppins';
+	font-weight: 600;
+	margin-top: 20px;
+}

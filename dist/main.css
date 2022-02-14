@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css2?family=Lacquer&family=Poppins:wght@400;500;600&display=swap);
+.head__80bc14f{
+	color: #550312;
+	font-family: 'Poppins';
+	font-weight: 600;
+	position: relative;
+	display: block;
+	width: 200px;
+}
+.head__80bc14f::after {
+	content: "";
+	position: absolute;
+	bottom: 10;
+	left: 50px;
+	width: 50%;
+	height: 10px;
+	background-color: #FFBE41;
+	right: 0;
+	margin: 0 auto;
+	display: block;
+	border-radius: 12px;
+}
+.catalog__dac5a02{
+	display: flex;
+	justify-content: center;
+}
+.menu__8efa4e2{
+	display: flex;
+	justify-content: center;
+	width: 1300px;
+	flex-wrap: wrap;
+	
+}
+.menuCard__d73a6ad{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	height: 300px;
+	flex-direction: column;
+	padding: 20px 20px 20px 20px;
+	border: #FFBE41 solid 2px;
+	border-radius: 13px;
+	margin: 10px 10px 10px 10px;
+	box-shadow: 0 3px #FFBE41 
+}
+.menuCard_h__409db26{
+	color: #550312;
+	font-family: 'Poppins';
+	font-weight: 500;
+}
+.menuCard_info__993c296{
+	display: flex;
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 17px;
+	color: #333333;
+	text-align: center;
+}
+.buy_btn__a15848e{
+	width: 100px;
+	height: 50px;
+	border: #550312 2px solid;
+	border-radius: 50px;
+	background-color: transparent;
+	color: #550312;
+	font-family: 'Poppins';
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+body{
+	padding: 0 5% 0  5%;
+	background-color: #FFFDF1;
+	margin: 0;
+}
+.app{
+	width: 100%;
+	height: 100%
+}
+a{
+	text-decoration: none;
+	color: #550312;
+
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	position: relative;
+	padding: 0 10px 0 0;
+
+}
+.navbar-bg{
+	background: linear-gradient( #FFAF14 100%, #FFFDF1 0%);
+	clip-path: polygon(44% 0, 100% 0%, 100% 100%, 50% 100%); 
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -9;
+}
+.navbar-link{
+	position: relative;
+	color: #550312;
+
+}
+.navbar-link_active::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #550312;
+	right: 0;
+	margin: 0 auto;
+	display: block;
+	animation: underline 1s ease ;
+	
+
+}
+.navbar-logo{
+	font-family: 'Lacquer', cursive;
+	color: #550312;
+	font-size: 37px;
+
+}
+@keyframes underline {
+	from {width: 0}
+	to {width: 100%}
+  }
+
+/*# sourceMappingURL=main.css.map*/
