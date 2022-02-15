@@ -5,6 +5,7 @@
 	position: relative;
 	display: block;
 	width: 200px;
+	margin: 50px 0 0 0;
 }
 .head::after {
 	content: "";
@@ -28,43 +29,6 @@
 	justify-content: center;
 	width: 1300px;
 	flex-wrap: wrap;
+	margin-top: 100px;
 	
-}
-.menuCard{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 20%;
-	height: 300px;
-	flex-direction: column;
-	padding: 20px 20px 20px 20px;
-	border: #FFBE41 solid 2px;
-	border-radius: 13px;
-	margin: 10px 10px 10px 10px;
-	box-shadow: 0 3px #FFBE41 
-}
-.menuCard_h{
-	color: #550312;
-	font-family: 'Poppins';
-	font-weight: 500;
-}
-.menuCard_info{
-	display: flex;
-	font-family: 'Poppins';
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 17px;
-	color: #333333;
-	text-align: center;
-}
-.buy_btn{
-	width: 100px;
-	height: 50px;
-	border: #550312 2px solid;
-	border-radius: 50px;
-	background-color: transparent;
-	color: #550312;
-	font-family: 'Poppins';
-	font-weight: 600;
-	margin-top: 20px;
 }
