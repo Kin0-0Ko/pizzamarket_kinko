@@ -1,17 +1,17 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import st from '@/style/card.module.css'
-
 
 export function Card({img, title, info}){
 
 
 	return <>
-			<div className={st.menuCard}>
-			<div className='menu-card_top'>
-				<h2 className={st.menuCard_h}>
+			<div className={st.Card}>
+			<div className={st.card_top}>
+				<img className={st.card_img} alt='pizza' src={img} />
+				<h2 className={st.Card_h}>
 					{title}
 				</h2>
-				<span className={st.menuCard_info}>
+				<span className={st.Card_info}>
 				{info} 
 				</span>
 			</div>

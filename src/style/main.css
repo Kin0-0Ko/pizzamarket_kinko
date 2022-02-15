@@ -1,5 +1,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Poppins:wght@400;500;600&display=swap');
+
+
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+	background: #FFFDF1; 
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+	background: #FFAF14; 
+	border-radius: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background: #bb8211; 
+  }
+
+
 body{
 	padding: 0 5% 0  5%;
 	background-color: #FFFDF1;

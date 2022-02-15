@@ -5,3 +5,5 @@ class RootStore{
 		this.catalog = CatalogStore
 	}
 }
+
+export default new RootStore()
