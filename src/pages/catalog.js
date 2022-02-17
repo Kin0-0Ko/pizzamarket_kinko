@@ -5,14 +5,15 @@ import Card from '../components/card';
 import storesContexts from '../contexts/storesContexts';
 
 export function catalog(){
-	let {catalog} = useContext(storesContexts)
+	let {catalog, cart} = useContext(storesContexts)
 
 	let pizzas = catalog.products.map( el =>
-		<Card key={el.id} title={el.title} info={el.info} img={el.src} />
+		<Card key={el.id} title={el.title} info={el.info} callback={() => cart.addInCart(el.id)} img={el.src} to='/cart'/>
 	)
 
 
 	return<>
+
 		<h1 className={st.head}>OUR MENU</h1>
 		<div className={st.catalog}>
 			<div className={st.menu}>

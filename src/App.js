@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-do
 import { routes, routesMap } from './router';
 import { observer } from 'mobx-react-lite';
 import storesContext from './contexts/storesContexts'
-import { catalog } from './store/catalogStore';
+
 
 function App(){
 	let routesComponents = routes.map(route => (
@@ -24,7 +24,7 @@ function App(){
 				</div>
 			</header>
 			<main>
-			<Switch>
+			<Switch >
 				{routesComponents}
 			</Switch>
 			</main>

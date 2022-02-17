@@ -3,6 +3,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 20%;
+	height: 450px;
 	flex-direction: column;
 	padding: 20px 20px 20px 20px;
 	border: #FFBE41 solid 2px;
@@ -15,6 +16,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .card_img{
 	width: 200px;
@@ -44,10 +46,27 @@
 	color: #550312;
 	font-family: 'Poppins';
 	font-weight: 600;
-	margin-top: 20px;
+	margin-top: 15px;
+}
+.buy_link{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 100px;
+	height: 50px;
+	border: #550312 2px solid;
+	border-radius: 50px;
+	background-color: transparent;
+	color: #550312;
+	font-family: 'Poppins';
+	font-weight: 600;
+	margin-top: 15px;
 }
 .buy_btn:hover{
 	width: 110px;
-	height: 60px;
+
+}
+.buy_link:hover{
+	width: 110px;
 
 }
