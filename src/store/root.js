@@ -3,8 +3,8 @@ import CatalogStore from './catalogStore'
 
 class RootStore{
 	constructor(){
-		this.catalog = CatalogStore,
-		this.cart = CartStore
+		this.catalog = new CatalogStore(this),
+		this.cart = new CartStore(this)
 	}
 }
 

@@ -37,36 +37,4 @@
 	line-height: 17px;
 	color: #333333;
 }
-.buy_btn{
-	width: 100px;
-	height: 50px;
-	border: #550312 2px solid;
-	border-radius: 50px;
-	background-color: transparent;
-	color: #550312;
-	font-family: 'Poppins';
-	font-weight: 600;
-	margin-top: 15px;
-}
-.buy_link{
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	width: 100px;
-	height: 50px;
-	border: #550312 2px solid;
-	border-radius: 50px;
-	background-color: transparent;
-	color: #550312;
-	font-family: 'Poppins';
-	font-weight: 600;
-	margin-top: 15px;
-}
-.buy_btn:hover{
-	width: 110px;
 
-}
-.buy_link:hover{
-	width: 110px;
-
-}

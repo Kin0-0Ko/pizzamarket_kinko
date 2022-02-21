@@ -4,6 +4,7 @@ import {
 	observable,
 	computed
 } from 'mobx';
+import RootStore from './root'
 
 let info = 'Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Erat mo rbi viverra bibendum in sit. Ac semper arcu facilisis ornare'
 
@@ -12,32 +13,44 @@ let info = 'Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Erat mo rb
 class CartStore {
 	prInCart = [];
 
-	get productsDetailed(){
+	get productsDetailed() {
 		return this.prInCart.map(pr => {
-			let info = productsStore.getById(pr.id);
-			return { ...info, ...pr };
+			let info = this.catalog.getById(pr.id);
+			return {
+				...info,
+				...pr
+			};
 		})
 	}
-	get total(){
+	get total() {
 		return this.productsDetailed.reduce((acc, pr) => acc + pr.price * pr.cnt, 0);
 	}
-	addInCart(id){
-		this.prInCart.push({ id, cnt: 1 })
+	addInCart(id) {
+		this.prInCart.push({
+			id,
+			cnt: 1
+		})
 	}
-	remove(id){
-		if(this.inCart(id)){
+
+	inCart = (id) => this.prInCart.some(pr => pr.id === id);
+
+	remove(id) {
+		if (this.inCart(id)) {
 			this.prInCart = this.prInCart.filter(pr => pr.id !== id);
 		}
 	}
 
-	change(id, cnt){
-		if(this.inCart(id)){
+	change(id, cnt) {
+		if (this.inCart(id)) {
 			let index = this.prInCart.findIndex(pr => pr.id === id);
 			this.prInCart[index].cnt = cnt;
 		}
 	}
 
-	constructor() {
+	constructor(RootStore) {
+		this.root = RootStore
+		this.catalog = this.root.catalog
+
 		makeObservable(this, {
 			prInCart: observable,
 			productsDetailed: computed,
@@ -50,4 +63,4 @@ class CartStore {
 	}
 }
 
-export default new CartStore();
+export default CartStore;

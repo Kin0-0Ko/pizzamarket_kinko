@@ -11,7 +11,9 @@ let info = 'Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Erat mo rb
 const productFromServer = [{
 		id: 100,
 		title:'miza',
-		info:info,
+		rest: 8,
+		price: 1500,
+		info: info,
 		src: './src/img/pizza3.png',
 		cnt: 4
 
@@ -19,7 +21,9 @@ const productFromServer = [{
 	{
 		id: 101,
 		title:'miza',
-		info:info,
+		rest: 11,
+		price: 1500,
+		info: info,
 		src: './src/img/pizza3.png',
 		cnt: 4
 
@@ -27,7 +31,9 @@ const productFromServer = [{
 	{
 		id: 102,
 		title:'miza',
-		info:info,
+		rest: 5,
+		price: 1500,
+		info: info,
 		src: './src/img/pizza3.png',
 		cnt: 4
 
@@ -35,9 +41,11 @@ const productFromServer = [{
 	{
 		id: 103,
 		title:'miza',
-		info:info,
+		rest: 2,
+		price: 1500,
+		info: info,
 		src: './src/img/pizza3.png',
-		cnt: 4
+		cnt: 1
 
 	}
 ];
@@ -45,6 +53,8 @@ const productFromServer = [{
 
 class Catalog {
 	products = productFromServer;
+
+	getById = id => this.products.find(pr => pr.id === id);
 
 
 	constructor() {
@@ -54,4 +64,4 @@ class Catalog {
 	}
 }
 
-export default new Catalog();
+export default Catalog;

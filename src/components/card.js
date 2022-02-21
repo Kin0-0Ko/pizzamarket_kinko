@@ -2,7 +2,7 @@ import React from 'react';
 import st from '@/style/card.module.css'
 import { NavLink, Redirect } from 'react-router-dom';
 
-export function Card({img, title, info, callback}){
+export function Card({img, title, info, btn}){
 
 
 	return <>
@@ -18,9 +18,7 @@ export function Card({img, title, info, callback}){
 			</div>
 			<div className='menu-card_bottom'>
 			</div>
-			<button onClick={callback} className={st.buy_btn}>
-				Buy Now
-			</button>
+			{btn}
 
 
 		</div>
