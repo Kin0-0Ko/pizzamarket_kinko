@@ -12,7 +12,7 @@ Counter.defaultProps = {
 	min: 1
 }
 
-function Counter({ min, max, current, onChange }){
+function Counter({ min, max, current, onChange, st }){
 	let inp = useRef();
 	let updInp = num => inp.current.value = num;
 
@@ -40,9 +40,9 @@ function Counter({ min, max, current, onChange }){
 	// useEffect(() => applyCurrent(current), [min, max]);
 
 	return <div>
-		<button className="btn" type="button" onClick={dec} disabled={current <= min}>-</button>&nbsp;
-		<input ref={inp} defaultValue={current} onBlur={applyStrValue}/>&nbsp;
-		<button className="btn" type="button" onClick={inc} disabled={current >= max}>+</button>
+		<button className={st?.dec} type="button" onClick={dec} disabled={current <= min}>-</button>&nbsp;
+		<input ref={inp} className={st?.inp} defaultValue={current} onBlur={applyStrValue}/>&nbsp;
+		<button className={st?.inc} type="button" onClick={inc} disabled={current >= max}>+</button>
 	</div>
 }
 

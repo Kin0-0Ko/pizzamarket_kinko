@@ -16,7 +16,7 @@ function App(){
 					<div className='navbar-bg'></div>
 					<NavLink to={routesMap.cart} activeClassName="navbar-link_active" className='navbar-link' exact>Cart</NavLink>
 					<NavLink to={routesMap.cart} activeClassName="navbar-link_active" className='navbar-link' exact>Cart</NavLink>
-					<NavLink to={routesMap.cart} activeClassName="navbar-link_active" className='navbar-link' exact>Cart</NavLink>
+					<NavLink to={routesMap.services} activeClassName="navbar-link_active" className='navbar-link' exact>Services</NavLink>
 					<span className='navbar-logo'>PIZZA GUSTO</span>
 					<NavLink to={routesMap.catalog} activeClassName="navbar-link_active" className='navbar-link' exact>Menu</NavLink>
 					<NavLink to={routesMap.catalog} activeClassName="navbar-link_active" className='navbar-link' exact>Menu</NavLink>

@@ -1,8 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import st from '@/style/card.module.css'
-import { NavLink, Redirect } from 'react-router-dom';
 
-export function Card({img, title, info, btn}){
+Card.propTypes = {
+	img: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
+	info: PropTypes.string.isRequired,
+	elem: PropTypes.object,
+	btn: PropTypes.object
+}
+
+export function Card({img, title, info, btn, elem}){
 
 
 	return <>
@@ -16,7 +24,8 @@ export function Card({img, title, info, btn}){
 				{info} 
 				</span>
 			</div>
-			<div className='menu-card_bottom'>
+			<div className={st.card_bottom}>
+				{elem}
 			</div>
 			{btn}
 

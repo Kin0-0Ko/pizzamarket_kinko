@@ -11,7 +11,7 @@ let info = 'Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Erat mo rb
 
 
 class CartStore {
-	prInCart = [];
+	prInCart = [{id: 101, cnt:2}];
 
 	get productsDetailed() {
 		return this.prInCart.map(pr => {
