@@ -10,6 +10,8 @@ function App(){
 		<Route path={route.path} component={route.component} exact={route.exact ?? true} key={route.path} />
 	));
 
+	// confirm('That`s a pet project')
+
 	return <Router>
 			<header>
 				<div className='navbar'>

@@ -10,13 +10,15 @@ Card.propTypes = {
 	btn: PropTypes.object
 }
 
-export function Card({img, title, info, btn, elem}){
+export function Card({img, title, info, btn, elem, stc}){
 
 
 	return <>
-			<div className={st.Card}>
+			<div className={st.Card}
+			style={stc.style == 'one' ? {border: '#FFBE41 solid 2px', boxShadow: '0 3px #FFBE41'}: 
+			{border: '#550312 solid 2px'}}>
 			<div className={st.card_top}>
-				<img className={st.card_img} alt='pizza' src={img} />
+				<img alt='pizza' src={img} width={stc.width} />
 				<h2 className={st.Card_h}>
 					{title}
 				</h2>
@@ -24,9 +26,9 @@ export function Card({img, title, info, btn, elem}){
 				{info} 
 				</span>
 			</div>
-			<div className={st.card_bottom}>
+			{elem && <div className={st.card_bottom}>
 				{elem}
-			</div>
+			</div>}
 			{btn}
 
 

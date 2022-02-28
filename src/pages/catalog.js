@@ -7,12 +7,24 @@ import storesContexts from '../contexts/storesContexts';
 export function catalog(){
 	let {catalog, cart} = useContext(storesContexts)
 	
+	let elem = <>
+
+	</>
+
 
 	let pizzas = catalog.products.map( el =>{
 		let btn = cart.inCart(el.id) ? 
 			<button onClick={() => cart.remove(el.id)} className={st.buy_btn}>Delete</button>:
 			<button onClick={() => cart.addInCart(el.id)} className={st.buy_btn}>Buy Now</button>	
-		return <Card key={el.id} title={el.title} info={el.info} btn={btn} img={el.src} to='/cart'/>
+		return <Card 
+				stc={{width: '200px', style: 'one' }} 
+				key={el.id} 
+				title={el.title} 
+				info={el.info} 
+				btn={btn} 
+				img={el.src} 
+				to='/cart'
+				/>
 	})
 
 

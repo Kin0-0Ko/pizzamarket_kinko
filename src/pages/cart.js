@@ -14,7 +14,15 @@ export function Cart() {
 	let productsRows = products.map( pr => {
 		let btn = <button onClick={() => cart.remove(pr.id)} className={st.rbtn}>X</button>
 		let counter = <Counter st={st}  max={pr.rest} current={pr.cnt} onChange={val => change(pr.id, val)}/> 
-		return 	<Card key={pr.id} title={pr.title} info={pr.info} btn={btn} elem={counter}  img={pr.src}  to='/cart'/>
+		return 	<Card stc={{width: '200px', style: 'one'}} 
+				key={pr.id} 
+				title={pr.title} 
+				info={pr.info} 
+				btn={btn}
+				elem={counter}  
+				img={pr.src}
+				to='/cart'
+				/>
 
 
 		});

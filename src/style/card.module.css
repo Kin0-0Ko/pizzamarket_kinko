@@ -6,10 +6,10 @@
 	height: 450px;
 	flex-direction: column;
 	padding: 20px 20px 20px 20px;
-	border: #FFBE41 solid 2px;
+	/* border: #FFBE41 solid 2px; */
 	border-radius: 13px;
 	margin: 10px 10px 10px 10px;
-	box-shadow: 0 3px #FFBE41
+	/* box-shadow: 0 3px #FFBE41 */
 }
 .card_top{
 	display: flex;
@@ -17,11 +17,6 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-}
-.card_img{
-	width: 200px;
-	height: 200px;
-
 }
 .Card_h{
 	color: #550312;
