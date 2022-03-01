@@ -4,9 +4,6 @@ import {
 	observable,
 	computed
 } from 'mobx';
-import RootStore from './root'
-
-let info = 'Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Erat mo rbi viverra bibendum in sit. Ac semper arcu facilisis ornare'
 
 
 

@@ -5,6 +5,7 @@ import Counter from '@/components/counter';
 import storesContexts from '../contexts/storesContexts';
 import Card from '../components/card';
 import { NavLink} from 'react-router-dom';
+import { object } from 'prop-types';
 
 export function Cart() {
 	let { cart } = useContext(storesContexts)
@@ -12,7 +13,7 @@ export function Cart() {
 
 
 	let productsRows = products.map( pr => {
-		let btn = <button onClick={() => cart.remove(pr.id)} className={st.rbtn}>X</button>
+		let btn = <button onClick={() => remove(pr.id)} className={st.rbtn}>X</button>
 		let counter = <Counter st={st}  max={pr.rest} current={pr.cnt} onChange={val => change(pr.id, val)}/> 
 		return 	<Card stc={{width: '200px', style: 'one'}} 
 				key={pr.id} 
@@ -27,14 +28,13 @@ export function Cart() {
 
 		});
 
-
 	return<>
 		<h1 className={st.head}>Cart</h1>
 		<div className={st.catalog}>
 			<div className={st.menu}>
 				{productsRows}
 			</div>
-			<NavLink to='/order'  className={st.order}>Order</NavLink>
+			{[] - products != [] && <NavLink to='/order'  className={st.order}>Order</NavLink>}
 		</div>
 		
 	</>
