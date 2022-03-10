@@ -5,7 +5,7 @@
 	position: relative;
 	display: block;
 	width: 200px;
-	margin: 50px 0 0 0;
+	margin: 0;
 }
 .head::after {
 	content: "";
@@ -103,7 +103,18 @@
 }
 
 .order:hover{
-	width: 110px;
-	height: 60px;
+	animation: orderAnim 0.5s;
+	background-color:#550312 ;
+	color: #FFFDF1;
+}
 
+@keyframes orderAnim {
+	from{
+		background-color: transparent;
+		color: #550312;
+	}
+	to{
+		background-color:#550312 ;
+		color: #FFFDF1;
+	}
 }

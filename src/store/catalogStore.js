@@ -10,7 +10,7 @@ let info = 'Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Erat mo rb
 
 const productFromServer = [{
 		id: 100,
-		title:'miza',
+		title:'Miza',
 		rest: 8,
 		price: 1500,
 		info: info,
@@ -20,7 +20,7 @@ const productFromServer = [{
 	},
 	{
 		id: 101,
-		title:'miza',
+		title:'Miza',
 		rest: 11,
 		price: 1500,
 		info: info,
@@ -30,7 +30,7 @@ const productFromServer = [{
 	},
 	{
 		id: 102,
-		title:'miza',
+		title:'Miza',
 		rest: 5,
 		price: 1500,
 		info: info,
@@ -40,7 +40,7 @@ const productFromServer = [{
 	},
 	{
 		id: 103,
-		title:'miza',
+		title:'Miza',
 		rest: 2,
 		price: 1500,
 		info: info,

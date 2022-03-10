@@ -34,7 +34,9 @@ export function Cart() {
 			<div className={st.menu}>
 				{productsRows}
 			</div>
-			{[] - products != [] && <NavLink to='/order'  className={st.order}>Order</NavLink>}
+			{[] - products != [] ? <NavLink to='/order'  className={st.order}>Order</NavLink>:
+				<span className={st.enptyCart}>There is nothing yet</span>
+			}
 		</div>
 		
 	</>

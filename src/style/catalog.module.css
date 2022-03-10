@@ -23,6 +23,7 @@
 .catalog{
 	display: flex;
 	justify-content: center;
+	height: 100%
 }
 .menu{
 	display: flex;
@@ -30,6 +31,7 @@
 	width: 1300px;
 	flex-wrap: wrap;
 	margin-top: 100px;
+
 	
 }
 .buy_btn{
@@ -45,7 +47,19 @@
 }
 
 .buy_btn:hover{
-	width: 110px;
+	animation: orderAnim 0.5s;
+	background-color:#550312 ;
+	color: #FFFDF1;
 
 }
 
+@keyframes orderAnim {
+	from{
+		background-color: transparent;
+		color: #550312;
+	}
+	to{
+		background-color:#550312 ;
+		color: #FFFDF1;
+	}
+}

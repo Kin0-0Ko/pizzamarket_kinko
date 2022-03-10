@@ -42,16 +42,5 @@
 }
 .slider div:nth-child(odd){
 	width: 300px;
-	height: 300px
-
+	height: 300px;
 }
-
-/* .right{
-	animation: right 1s ;
-	left: 0
-}
-
-@keyframes right {
-	from {left: 0}
-	to {left: -100}
-  } */

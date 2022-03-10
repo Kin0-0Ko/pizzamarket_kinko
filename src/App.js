@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import { routes, routesMap } from './router';
 import { observer } from 'mobx-react-lite';
-import storesContext from './contexts/storesContexts'
+import { createBrowserHistory } from "history"
 
 
 function App(){
@@ -11,13 +11,14 @@ function App(){
 	));
 
 	// confirm('That`s a pet project')
+	let history = createBrowserHistory();
 
-	return <Router>
+	return <Router history={history}>
 			<header>
 				<div className='navbar'>
 					<div className='navbar-bg'></div>
 					<NavLink to={routesMap.cart} activeClassName="navbar-link_active" className='navbar-link' exact>Cart</NavLink>
-					<NavLink to={routesMap.cart} activeClassName="navbar-link_active" className='navbar-link' exact>Cart</NavLink>
+					<NavLink to={routesMap.about} activeClassName="navbar-link_active" className='navbar-link' exact>About Us</NavLink>
 					<NavLink to={routesMap.services} activeClassName="navbar-link_active" className='navbar-link' exact>Services</NavLink>
 					<span className='navbar-logo'>PIZZA GUSTO</span>
 					<NavLink to={routesMap.catalog} activeClassName="navbar-link_active" className='navbar-link' exact>Menu</NavLink>
@@ -31,7 +32,8 @@ function App(){
 			</Switch>
 			</main>
 			<footer>
-
+				<img src='./src/img/ft+lft.svg'/>
+				<img onClick={() => history.goBack()} src='./src/img/back_ft_rht.svg'/>
 			</footer>
 	</Router>
 }

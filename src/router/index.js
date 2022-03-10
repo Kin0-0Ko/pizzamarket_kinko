@@ -1,6 +1,8 @@
 import Catalog from '@/pages/catalog'
 import Cart from '@/pages/cart'
 import Services from '@/pages/services'
+import About from '@/pages/about'
+
 let routes = [{
 		name: 'catalog',
 		path: '/',
@@ -10,6 +12,11 @@ let routes = [{
 		name: 'cart',
 		path: '/cart',
 		component: Cart
+	},
+	{
+		name: 'about',
+		path: '/about',
+		component: About
 	},
 	{
 		name: 'services',
