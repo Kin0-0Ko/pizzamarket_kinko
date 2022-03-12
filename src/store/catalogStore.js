@@ -29,6 +29,16 @@ const productFromServer = [{
 
 	},
 	{
+		id: 104,
+		title:'Miza',
+		rest: 11,
+		price: 1500,
+		info: info,
+		src: './src/img/pizza3.png',
+		cnt: 4
+
+	},
+	{
 		id: 102,
 		title:'Miza',
 		rest: 5,

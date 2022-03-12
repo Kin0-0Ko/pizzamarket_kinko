@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { observer } from 'mobx-react-lite';
 import st from '@/style/catalog.module.css'
 import Card from '../components/card';
@@ -7,9 +7,7 @@ import storesContexts from '../contexts/storesContexts';
 export function catalog(){
 	let {catalog, cart} = useContext(storesContexts)
 	
-	let elem = <>
 
-	</>
 
 
 	let pizzas = catalog.products.map( el =>{
@@ -28,7 +26,11 @@ export function catalog(){
 	})
 
 
-
+	useEffect(() =>{
+		catalog.products.length > 4 ?
+		document.getElementsByTagName('main')[0].style.height  = '100%':
+		document.getElementsByTagName('main')[0].style.height  = '777px'
+	})
 
 	return<>
 

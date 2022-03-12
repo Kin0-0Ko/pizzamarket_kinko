@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import { routes, routesMap } from './router';
 import { observer } from 'mobx-react-lite';
@@ -12,6 +12,9 @@ function App(){
 
 	// confirm('That`s a pet project')
 	let history = createBrowserHistory();
+
+
+
 
 	return <Router history={history}>
 			<header>

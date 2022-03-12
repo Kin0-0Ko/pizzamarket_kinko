@@ -40,7 +40,9 @@ export function Services() {
 
 
 
-
+	useEffect(() =>{
+		document.getElementsByTagName('main')[0].style.removeProperty('height')
+	})
 	
 
 	let slider = slides.map(el =>

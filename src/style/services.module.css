@@ -21,10 +21,11 @@
 	border-radius: 12px;
 }
 .services{
-	margin-top: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
+
 }
 .slider{
 	display: flex;

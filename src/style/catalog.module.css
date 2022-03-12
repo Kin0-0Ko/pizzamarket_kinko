@@ -23,7 +23,6 @@
 .catalog{
 	display: flex;
 	justify-content: center;
-	height: 100%
 }
 .menu{
 	display: flex;
@@ -52,6 +51,7 @@
 	color: #FFFDF1;
 
 }
+
 
 @keyframes orderAnim {
 	from{

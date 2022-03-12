@@ -5,10 +5,7 @@ import st from '@/style/about.module.css'
 export function About() {
 
 	useEffect(() =>{
-		console.log(document.getElementsByTagName('main'))
-		document.getElementsByTagName('main')[0].style.padding  = '0'
-		document.getElementsByTagName('main')[0].style.height  = '82.5%'
-
+		document.getElementsByTagName('main')[0].style.removeProperty('height')
 	})
 
 	return<>
@@ -18,7 +15,7 @@ export function About() {
 			<div className={st.bgOne}></div>
 			<div className={st.bgTwo}></div>
 			<div className={st.top}>
-				<img/>
+				<img src='./src/img/image_about.png'/>
 				<span>
 					Lorem ipsum dolor sit amet, consectetur adipiscing 
 					elit. Condimentum odio aliquet sapien neque, porttitor tellus pellentesque 
@@ -29,8 +26,7 @@ export function About() {
 					vitae est.
 				</span>
 			</div>
-			<div>
-				<img/>
+			<div  className={st.bottom}>
 				<span>
 					Lorem ipsum dolor sit amet, consectetur adipiscing 
 					elit. Condimentum odio aliquet sapien neque, porttitor tellus pellentesque 
@@ -40,6 +36,7 @@ export function About() {
 					justo, turpis suspendisse gravida a ultrices nunc ultrices nisi. Rutrum phasellus 
 					vitae est.
 				</span>
+				<img src='./src/img/image_about.png'/>
 			</div>
 
 		</div>
