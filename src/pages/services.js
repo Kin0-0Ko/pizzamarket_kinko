@@ -52,7 +52,7 @@ export function Services() {
 		
 
 	return<>
-		<h2 className={st.head}>Our Services</h2>
+		<h1 className={st.head}>Our Services</h1>
 		<div className={st.services}>
 			<div  className={st.slider}>
 			{slider}

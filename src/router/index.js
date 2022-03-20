@@ -2,10 +2,12 @@ import Catalog from '@/pages/catalog'
 import Cart from '@/pages/cart'
 import Services from '@/pages/services'
 import About from '@/pages/about'
+import Reviews from '@/pages/reviews'
+import Contacts from '@/pages/contacts'
 
 let routes = [{
 		name: 'catalog',
-		path: '/',
+		path: '/menu',
 		component: Catalog
 	},
 	{
@@ -23,6 +25,16 @@ let routes = [{
 		path: '/services',
 		component: Services
 	},
+	{
+		name: 'reviews',
+		path: '/',
+		component: Reviews
+	},
+	{
+		name: 'contacts',
+		path: '/contacts',
+		component: Contacts
+	}
 ];
 
 let routesMap = {};

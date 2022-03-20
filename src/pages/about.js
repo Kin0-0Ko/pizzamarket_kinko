@@ -9,9 +9,10 @@ export function About() {
 	})
 
 	return<>
-		<h1 className={st.head}>About</h1>
 
 		<div className={st.About}>
+		<h1 className={st.head}>About</h1>
+
 			<div className={st.bgOne}></div>
 			<div className={st.bgTwo}></div>
 			<div className={st.top}>

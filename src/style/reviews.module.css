@@ -1,0 +1,133 @@
+
+.reviews{
+	width: 100%;
+	height: 95%;
+	position: relative;
+	padding-top: 40px;
+}
+
+.reviewsBg{
+	background: linear-gradient( #FFAF14 100%, #FFFDF1 0%);
+	clip-path: polygon(50% 0%, 100% 61.8%, 100% 0%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	top: 0
+}
+.reviewsBg2{
+	background: linear-gradient( #FFAF41 100%, #FFFDF1 0%);
+
+	clip-path: polygon(100% 54.8%, 100% 100%, 77.5% 39.3%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	top: 0
+}
+
+.content{
+	width: 100%;
+	height: 80%;
+	display: flex;
+	align-items: center;
+}
+
+.descrp{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+.left{
+	display: flex;
+	flex-direction: column;
+	width: 550px;
+}
+.left h2{
+	color: #550312;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 34px;
+	margin: 0;
+	margin-top: 10px;
+}
+.left h3{
+	color: #333333;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 57px;
+}
+.left span{
+	color: #333333;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.timeSheet{
+	display: flex;
+	margin-top: 100px;
+}
+
+.time{
+	display: flex;
+	flex-direction: column;
+	margin-left: 40px;
+}
+.time p{
+	margin: 5px 0 5px 0 ;
+}
+
+.center{
+	display: flex;
+	align-items: center;
+	margin-right: 100px;
+}
+.sNets{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 10%;
+}
+.sNets > * {
+	margin-left: 50px;
+}
+.sNets img {
+	width: 60px;
+	height: 60px;
+}
+
+.btn{
+	width: 100px;
+	height: 50px;
+	border-radius: 50px;
+	color: #FFFDF1;
+	background-color:#550312 ;
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 20px;
+	border: none;
+	width: 150px;
+	height: 70px;
+}
+
+.btn:hover{
+	animation: btnAnim 0.5s;
+	border: #550312 2px solid;
+	color: #550312;
+	background-color: transparent;
+}
+@keyframes btnAnim {
+	from{
+		background-color:#550312 ;
+		color: #FFFDF1;
+
+	}
+	to{
+		background-color: transparent;
+		color: #550312;
+	}
+}

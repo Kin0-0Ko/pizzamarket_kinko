@@ -25,8 +25,8 @@ function App(){
 					<NavLink to={routesMap.services} activeClassName="navbar-link_active" className='navbar-link' exact>Services</NavLink>
 					<span className='navbar-logo'>PIZZA GUSTO</span>
 					<NavLink to={routesMap.catalog} activeClassName="navbar-link_active" className='navbar-link' exact>Menu</NavLink>
-					<NavLink to={routesMap.catalog} activeClassName="navbar-link_active" className='navbar-link' exact>Menu</NavLink>
-					<NavLink to={routesMap.catalog} activeClassName="navbar-link_active" className='navbar-link' exact>Menu</NavLink>
+					<NavLink to={routesMap.reviews} activeClassName="navbar-link_active" className='navbar-link' exact>Reviews</NavLink>
+					<NavLink to={routesMap.contacts} activeClassName="navbar-link_active" className='navbar-link' exact>Contacts</NavLink>
 				</div>
 			</header>
 			<main>

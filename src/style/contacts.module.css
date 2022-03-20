@@ -1,0 +1,60 @@
+input{
+	background: #FFFDF1;
+	border: 1px solid #550312;
+	box-shadow: inset -25px -25px 45px rgba(255, 252, 233, 0.8), inset 26px 26px 48px #E5D8D0;
+	border-radius: 50px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	color: #804D4D;
+	padding: 20px;
+	outline: none;
+}
+input::placeholder {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	color: #804D4D;
+  }
+
+
+.contacts{
+	display: flex;
+	flex-direction: column;
+	padding: 0 3% 0 3%;
+	height: 100%;
+}
+
+.top{
+	height: 10%;
+	display: flex;
+	align-items: center;
+	margin-top: 5%;
+}
+
+.bottom{
+	display: flex;
+	height: 85%;
+}
+
+.left{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+}
+.left > *{
+	width: 500px;
+}
+.right > *{
+	width: 500px;
+}
+
+.right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+}
