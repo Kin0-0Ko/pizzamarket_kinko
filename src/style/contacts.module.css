@@ -1,4 +1,4 @@
-input{
+.input{
 	background: #FFFDF1;
 	border: 1px solid #550312;
 	box-shadow: inset -25px -25px 45px rgba(255, 252, 233, 0.8), inset 26px 26px 48px #E5D8D0;
@@ -11,7 +11,7 @@ input{
 	padding: 20px;
 	outline: none;
 }
-input::placeholder {
+.input::placeholder {
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 500;
@@ -43,18 +43,89 @@ input::placeholder {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 50%;
+	width: 45%;
+	padding-left: 3%;
+}
+.left::before {
+	content: "";
+	position: absolute;
+	transform: rotate(90deg);
+	bottom: 51%;
+	left: -0.5%;
+	width: 120px;
+	height: 17px;
+	background-color: #FFBE41;
+	display: block;
+	border-radius: 12px;
+}
+.left h2{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 43px;
+	color: #550312;
+}
+.btmWrp{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.left, .right span{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
 }
 .left > *{
 	width: 500px;
+	margin-top: 30px;
 }
 .right > *{
 	width: 500px;
+	margin-top: 25px;
+
 }
 
 .right{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 50%;
+	width: 45%;
+	padding-left: 3%;
+}
+.right h2{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 43px;
+	color: #550312;
+}
+
+
+.right::before {
+	content: "";
+	position: absolute;
+	transform: rotate(90deg);
+	bottom: 50%;
+	left: 44%;
+	width: 130px;
+	height: 18px;
+	background-color: #550312;
+	display: block;
+	border-radius: 12px;
+}
+.linkBar{
+	width: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.linkBar > *{
+	margin-top: 10px;
+	width: 65px;
+	height: 65px;
+	background-color: #550312;
+	border-radius: 50px;
 }

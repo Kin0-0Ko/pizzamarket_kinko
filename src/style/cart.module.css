@@ -43,11 +43,12 @@
 	color: #550312;
 	font-family: 'Poppins';
 	font-weight: 600;
-	margin-top: 15px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .rbtn:hover{
-	width: 45px;
+	animation: orderAnim 0.5s;
 
 }
 .inc{
@@ -118,3 +119,4 @@
 		color: #FFFDF1;
 	}
 }
+

@@ -1,14 +1,13 @@
-import React from 'react';
+import React, {useEffect}from 'react';
 import st from '@/style/contacts.module.css';
 
 
 export function Contacts(){
 
 
-
 	return <div className={st.contacts}>
 		<div className={st.top}>
-			<input placeholder=' | Leave a message  . . .'/>
+			<input className={st.input} placeholder=' | Leave a message  . . . '/>
 		</div>
 		<div className={st.bottom}>
 			<div className={st.left}>
@@ -21,8 +20,10 @@ export function Contacts(){
 					 lacus, ornare. Facilisis habitant vel 
 					 dignissim amet, bibendum. Sit leo lectus.
 				</span>
-				<img/>
-				<input placeholder='+250 780102030'/>
+				<div className={st.btmWrp}>
+				<a><img src="./src/img/Whts_cn.svg"/></a>
+				<input className={st.input} value='+250 780102030' type="text" readOnly/>
+				</div>
 			</div>
 			<div className={st.right}>
 				<h2>Address</h2>
@@ -30,8 +31,17 @@ export function Contacts(){
 				<span>
 					commodo, lacus, ornare. Facilisis habitant vel dignissim amet, bibendum. Sit leo lectus.
 				</span>
-				<img/>
-				<input placeholder='1300'/>
+				<div className={st.btmWrp}>
+				<a><img src="./src/img/Phone_cn.svg"/></a>
+				<input className={st.input} value='1300' type="text" readOnly/>
+				</div>
+			</div>
+			<div className={st.linkBar}>
+				<a><img src="./src/img/inst_cn.svg"/></a>
+				<a><img src="./src/img/google_cn.svg"/></a>
+				<a><img src="./src/img/facebook_cn.svg"/></a>
+				<a><img src="./src/img/lnk_cn.svg"/></a>
+				<a><img src="./src/img/pint_cn.svg"/></a>
 			</div>
 		</div>
 	
