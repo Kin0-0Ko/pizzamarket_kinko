@@ -14,7 +14,7 @@ const productFromServer = [{
 		rest: 8,
 		price: 1500,
 		info: info,
-		src: './src/img/pizza3.png',
+		src: '/img/pizza.png',
 		cnt: 4
 
 	},
@@ -24,7 +24,7 @@ const productFromServer = [{
 		rest: 11,
 		price: 1500,
 		info: info,
-		src: './src/img/pizza3.png',
+		src: '/img/pizza.png',
 		cnt: 4
 
 	},
@@ -34,7 +34,7 @@ const productFromServer = [{
 		rest: 11,
 		price: 1500,
 		info: info,
-		src: './src/img/pizza3.png',
+		src: '/img/pizza.png',
 		cnt: 4
 
 	},
@@ -44,7 +44,7 @@ const productFromServer = [{
 		rest: 5,
 		price: 1500,
 		info: info,
-		src: './src/img/pizza3.png',
+		src: '/img/pizza.png',
 		cnt: 4
 
 	},
@@ -54,7 +54,7 @@ const productFromServer = [{
 		rest: 2,
 		price: 1500,
 		info: info,
-		src: './src/img/pizza3.png',
+		src: '/img/pizza.png',
 		cnt: 1
 
 	}

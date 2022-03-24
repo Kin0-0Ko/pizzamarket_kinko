@@ -10,7 +10,7 @@ function App(){
 		<Route path={route.path} component={route.component} exact={route.exact ?? true} key={route.path} />
 	));
 
-	// confirm('That`s a pet project')
+	confirm('That`s a pet project')
 	let history = createBrowserHistory();
 
 
@@ -36,7 +36,7 @@ function App(){
 			</main>
 			<footer>
 				<img src='./src/img/ft+lft.svg'/>
-				<img onClick={() => history.goBack()} src='./src/img/back_ft_rht.svg'/>
+				<img onClick={() => history.goBack()} src='/img/back_ft_rht.svg'/>
 			</footer>
 	</Router>
 }

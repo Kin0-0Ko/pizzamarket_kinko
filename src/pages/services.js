@@ -5,17 +5,17 @@ import Card from '../components/card';
 export function Services() {
 	const [slides, setSlides] = useState([
 		{
-			img: './src/img/Vector.svg',
+			img: '/img/Vector.svg',
 			title: 'Our servings' ,
 			info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat morbi viverra bibendum in sit. Ac semper arcu facilisis ornare '
 		},
 		{
-			img: './src/img/Vector2.svg',
+			img: '/img/Vector2.svg',
 			title: 'Fast food' ,
 			info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat morbi viverra bibendum in sit. Ac semper arcu facilisis ornare suspendisse. Eget at tincidunt neque sapien enim tristique eu.'
 		},
 		{
-			img: './src/img/Vector3.svg',
+			img: '/img/Vector3.svg',
 			title: 'Deliveries' ,
 			info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat morbi viverra bibendum in sit. Ac semper arcu facilisis ornare '
 		}

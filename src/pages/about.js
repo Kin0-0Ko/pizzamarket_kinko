@@ -16,7 +16,7 @@ export function About() {
 			<div className={st.bgOne}></div>
 			<div className={st.bgTwo}></div>
 			<div className={st.top}>
-				<img src='./src/img/image_about.png'/>
+				<img src='/img/image_about.png'/>
 				<span>
 					Lorem ipsum dolor sit amet, consectetur adipiscing 
 					elit. Condimentum odio aliquet sapien neque, porttitor tellus pellentesque 
@@ -37,7 +37,7 @@ export function About() {
 					justo, turpis suspendisse gravida a ultrices nunc ultrices nisi. Rutrum phasellus 
 					vitae est.
 				</span>
-				<img src='./src/img/image_about.png'/>
+				<img src='/img/image_about.png'/>
 			</div>
 
 		</div>

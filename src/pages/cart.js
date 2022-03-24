@@ -39,7 +39,7 @@ export function Cart() {
 			<div className={st.menu}>
 				{productsRows}
 			</div>
-			{[] - products != [] ? <NavLink to='/order'  className={st.order}>Order</NavLink>:
+			{[] - products != [] ? <button onClick={() => confirm('That`s a pet project')} className={st.order}>Order</button>:
 				<span className={st.enptyCart}>There is nothing yet</span>
 			}
 		</div>

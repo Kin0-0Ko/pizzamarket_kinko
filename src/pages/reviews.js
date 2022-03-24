@@ -40,7 +40,7 @@ export function Reviews() {
 
 				</div>
 				<div className={st.center}>
-					<button className={st.btn}>Order now</button>
+					<button className={st.btn} onClick={() => confirm('You can`t order anything. That`s a pet project')}>Order now</button>
 				</div>
 				<div className={st.right}>
 					<img src='./src/img/pizza_about.png'/>

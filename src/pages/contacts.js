@@ -4,6 +4,9 @@ import st from '@/style/contacts.module.css';
 
 export function Contacts(){
 
+		useEffect(() =>{
+		document.getElementsByTagName('main')[0].style.removeProperty('height')
+	})
 
 	return <div className={st.contacts}>
 		<div className={st.top}>
@@ -21,7 +24,7 @@ export function Contacts(){
 					 dignissim amet, bibendum. Sit leo lectus.
 				</span>
 				<div className={st.btmWrp}>
-				<a><img src="./src/img/Whts_cn.svg"/></a>
+				<a><img src="/img/Whts_cn.svg"/></a>
 				<input className={st.input} value='+250 780102030' type="text" readOnly/>
 				</div>
 			</div>
@@ -32,16 +35,16 @@ export function Contacts(){
 					commodo, lacus, ornare. Facilisis habitant vel dignissim amet, bibendum. Sit leo lectus.
 				</span>
 				<div className={st.btmWrp}>
-				<a><img src="./src/img/Phone_cn.svg"/></a>
+				<a><img src="/img/Phone_cn.svg"/></a>
 				<input className={st.input} value='1300' type="text" readOnly/>
 				</div>
 			</div>
 			<div className={st.linkBar}>
-				<a><img src="./src/img/inst_cn.svg"/></a>
-				<a><img src="./src/img/google_cn.svg"/></a>
-				<a><img src="./src/img/facebook_cn.svg"/></a>
-				<a><img src="./src/img/lnk_cn.svg"/></a>
-				<a><img src="./src/img/pint_cn.svg"/></a>
+				<a><img src="/img/inst_cn.svg"/></a>
+				<a><img src="/img/google_cn.svg"/></a>
+				<a><img src="/img/facebook_cn.svg"/></a>
+				<a><img src="/img/lnk_cn.svg"/></a>
+				<a><img src="/img/pint_cn.svg"/></a>
 			</div>
 		</div>
 	
