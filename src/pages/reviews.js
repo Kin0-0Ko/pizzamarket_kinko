@@ -30,7 +30,7 @@ export function Reviews() {
 					</span>
 
 					<div className={st.timeSheet}>
-						<img src='./src/img/Clock_clock.svg'/>
+						<img src='/img/Clock_clock.svg'/>
 						<span className={st.time}>
 							<p>MON-THUR   9AM - 7:30 PM</p>
 							<p>FRI-SAT  10AM - 8PM</p>
@@ -43,7 +43,7 @@ export function Reviews() {
 					<button className={st.btn} onClick={() => confirm('You can`t order anything. That`s a pet project')}>Order now</button>
 				</div>
 				<div className={st.right}>
-					<img src='./src/img/pizza_about.png'/>
+					<img src='/img/pizza_about.png'/>
 
 				</div>
 
@@ -51,11 +51,11 @@ export function Reviews() {
 
 			</div>
 			<div className={st.sNets}>
-				<a href='#'><img src='./src/img/Vector_1.svg'/></a>
-				<a href='#'><img src='./src/img/Vector-1.svg'/></a>
-				<a href='#'><img src='./src/img/Vector-2.svg'/></a>
-				<a href='#'><img src='./src/img/Vector-3.svg'/></a>
-				<a href='#'><img src='./src/img/Vector-4.svg'/></a>
+				<a href='#'><img src='/img/Vector_1.svg'/></a>
+				<a href='#'><img src='/img/Vector-1.svg'/></a>
+				<a href='#'><img src='/img/Vector-2.svg'/></a>
+				<a href='#'><img src='/img/Vector-3.svg'/></a>
+				<a href='#'><img src='/img/Vector-4.svg'/></a>
 			</div>
 		</div>
 
